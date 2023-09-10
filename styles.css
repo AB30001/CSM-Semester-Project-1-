@@ -1,0 +1,97 @@
+/* styles.css */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+   
+}
+
+.logo img {
+    height: 50px; /* Adjust the size as needed */
+}
+
+
+
+
+
+.opening-hours {
+    text-align: right;
+}
+
+.tickets-button {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.tickets-button:hover {
+    background-color: #d32f2f;
+}
+
+/* ... (your existing styles) ... */
+
+/* Announcement bar styles */
+.announcement-bar {
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Optionally, add styles to make the announcement bar stand out */
+.announcement-bar p {
+    margin: 0;
+    font-weight: bold;
+}
+
+nav, #menu-checkbox {
+  display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+  display: block;
+}
+
+nav {
+  position: absolute;
+  background: black;
+  
+}
+
+nav a {
+  display: block;
+  color: white;
+  padding: 10px 20px;
+}
+
+.menu-icon {
+  padding: 10px;
+}
+
+@media (min-width: 600px) {
+  nav {
+    display: block;
+    position: static;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+
+  nav a {
+    display: inline-block;
+  }
+}
+
