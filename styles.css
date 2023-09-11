@@ -1,97 +1,90 @@
-/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+}
+/*header styles*/
+li, a, button {
+    font-family:'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
+    padding: 30px 10%;
 }
 
 .logo {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 10px 20px;
-   
+    cursor: pointer;
 }
 
-.logo img {
-    height: 50px; /* Adjust the size as needed */
+nav-links {
+    list-style: none;
 }
 
-
-
-
-
-.opening-hours {
-    text-align: right;
-}
-
-.tickets-button {
-    padding: 10px 20px;
-    background-color: #f44336;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.tickets-button:hover {
-    background-color: #d32f2f;
-}
-
-/* ... (your existing styles) ... */
-
-/* Announcement bar styles */
-.announcement-bar {
-    background-color: #f44336;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Optionally, add styles to make the announcement bar stand out */
-.announcement-bar p {
-    margin: 0;
-    font-weight: bold;
-}
-
-nav, #menu-checkbox {
-  display: none;
-}
-
-#menu-checkbox:checked ~ nav {
-  display: block;
-}
-
-nav {
-  position: absolute;
-  background: black;
-  
-}
-
-nav a {
-  display: block;
-  color: white;
-  padding: 10px 20px;
-}
-
-.menu-icon {
-  padding: 10px;
-}
-
-@media (min-width: 600px) {
-  nav {
-    display: block;
-    position: static;
-  }
-  
-  .menu-icon {
-    display: none;
-  }
-
-  nav a {
+.nav-links li {
     display: inline-block;
-  }
+    padding: 0px 20px; 
 }
 
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    transition: all 0.3s ease 0s;
+    color: #79e08c ;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(63, 167, 82, 0.8);
+    border:none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    
+
+}
+
+button:hover {
+    background-color: rgba(63, 167, 82, 0.5); 
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack items vertically for smaller screens */
+        text-align: center;
+        padding: 20px 5%;
+    }
+
+    .nav-links {
+        margin-top: 20px; /* Add space between logo and navigation links */
+    }
+
+    .nav-links li {
+        display: block; /* Display navigation links as block elements */
+        margin-bottom: 10px; /* Add spacing between navigation links */
+    }
+
+    button {
+        margin-top: 20px; /* Add space between navigation links and button */
+    }
+}
+
+/*header styles end*/
+
+/* Styles for the hero banner */
+/* Styles for the hero banner */
+
+
+
+   
