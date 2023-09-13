@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Roboto+Mono:wght@300&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Roboto+Mono:wght@300;400&family=Roboto:wght@100;300;400&display=swap');
 
 
 * {
     max-width: 1440px;
     margin: 0 auto;
-    background-color: whitesmoke;
+    background-color: transparent;
 }
+
 
 i {
     background-color: transparent;
@@ -15,18 +16,25 @@ h2 {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
 }
+@media (max-width: 768px) {
+    h2 {
+        font-size: 16px;
+    }
+}
 
 
 
 #latest-news {
     color:  black !important;
     font-family:'Inter', sans-serif;
+    margin-left: 40px;
+    margin-top: 10px;
 }
 /*header styles*/
 
 li, a, button {
     font-family:'Inter', sans-serif;
-    font-weight: bold;
+    font-weight: 
     font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
@@ -173,19 +181,24 @@ button:hover {
 
     
    
-/* Media query for smaller screens */
+/* hero banner, media query for smaller screens */
     @media (max-width: 768px) {
-        background-size: auto; /* Scale down the background image */
-        padding: 50px 0; /* Reduce padding for smaller screens */
+        .hero-banner
+        {
+        background-size: auto; 
+        
+        }
     }
-    }
+    
 
 /* Styles for the hero banner end */
 
 /* Styles for news containers */
 
 .news-containers {
-    color: aliceblue;
+    color: rgb(3, 3, 3);
+    
+    
 }
 
 .news-container {
@@ -284,6 +297,115 @@ button:hover {
     }
     
 }
+
+
+/*footer styles*/
+
+.footer {
+    background-color: #333 !important;
+    padding: 20px 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+    max-width: 25%;
+}
+
+.footer-column-name {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.footer p {
+    color: #aaa; 
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+
+
+.fa-instagram, 
+.fa-facebook, 
+.fa-x-twitter, 
+.fa-linkedin-in {
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+#Logo {
+    max-width: 200px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: -15px;
+}
+#trip-advisor-logo {
+    padding-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        max-width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .footer-column-name { 
+        margin-top: 10px;
+    }
+
+    .fa-instagram, 
+    .fa-facebook, 
+    .fa-x-twitter, 
+    .fa-linkedin-in {
+        margin: 0 5px;
+    }
+}
+
+.sponsors-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    background-color: #504646;
+    color: white;
+}
+.sponsors-container div {
+    margin: 0 5px;  /* Provides some spacing between the divs */
+}
+.sponsors-container img {
+    max-width: 200px; /* Or whatever default size you desire */
+    height: auto;
+    margin: px; /* Spacing between images */}
+
+.sponsors-container div p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+   
+
+
 
 
 
