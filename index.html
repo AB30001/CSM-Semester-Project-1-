@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/34e9d353d2.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Science Community Museum</title>
@@ -8,26 +9,74 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img class="logo" src="assets/logo.png" alt="logo-community-science-museum">
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Exhibits</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <a class="tickets-button" href="#"><button>TICKETS</button></a>
-    </header>
+    
+        <header>
+            <img class="logo" src="assets/logo.png" alt="logo-community-science-museum">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Exhibits</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <a class="tickets-button" href="#">TICKETS</a>
+        </header>
+    
 
     <main>
 
-        <section class="hero-banner">
-            <img src="assets/herro banner.png" alt="hero-image-comunity-science-museum">
+        <div class="hero-banner">
+            <a id="explore-exhibits-button" href="exhibits">Explore Our Exhibits</a>
+        </div>
+
+        <section>
+            <h1 id="latest-news">LATEST NEWS</h1> 
         </section>
 
-        <section id="latest-news">
-            <h1>LATEST NEWS</h1> 
+        
+        <section class="news-containers">
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="assets/news-picture-1.jpg" alt="Coming Soon: Dive into a 3D Movie Extravaganza at Our Museum!">
+                    <h2>Coming Soon: Dive into a 3D Movie Extravaganza at Our Museum!</h2>
+                    <div class="details">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span class="date">July 12, 2023</span>
+                        <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            
+    
+            <div class="column">
+                <div class="card">
+                    <img src="assets/news-picture-2.jpg" alt="Explore the New Human Anatomy Exhibit at Our Community Science Museum!">
+                    <h2>Explore Human Anatomy Exhibit at Our Community Science Museum!</h2>
+                    <div class="details">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span class="date">July 12, 2023</span>
+                        <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="column">
+                <div class="card">
+                    <img src="assets/news-picture-3.jpg" alt="Discover the New 3D Painting Exhibit at Our Community Science Museum!">
+                    <h2>Discover the New 3D Painting Exhibit at Our Community Science Museum!</h2>
+                    <div class="details">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span class="date">July 12, 2023</span>
+                        <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         </section>
     </main>
     

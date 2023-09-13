@@ -1,38 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Roboto+Mono:wght@300&family=Roboto:ital,wght@1,300&display=swap');
+
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #333333;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+i {
+    background-color: transparent;
+}
+h2 {
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+
+
+#latest-news {
+    color:  black !important;
+    font-family:'Inter', sans-serif;
 }
 /*header styles*/
+
 li, a, button {
     font-family:'Inter', sans-serif;
     font-weight: bold;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
+    background-color: transparent;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 5px 5px 5px 5px; /* top, right, bottom, left */
+    background-color: #333333;
 }
 
 .logo {
     cursor: pointer;
+    margin: 0px;
+    background-color: #333333;
+    
+}
+nav ul {
+    background-color: #333333;
+}
+.tickets-button {
+    margin: 0px;
 }
 
-nav-links {
+.nav-links {
     list-style: none;
 }
 
 .nav-links li {
     display: inline-block;
-    padding: 0px 20px; 
+    padding: 0px 20px;
 }
 
 .nav-links li a {
@@ -48,16 +76,30 @@ button {
     padding: 9px 25px;
     background-color: rgba(63, 167, 82, 0.8);
     border:none;
-    border-radius: 30px;
+    border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     
-
 }
 
 button:hover {
     background-color: rgba(63, 167, 82, 0.5); 
 }
+
+.tickets-button {
+    padding: 9px 25px;
+    background-color: rgba(63, 167, 82, 0.8);
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.tickets-button:hover {
+    background-color: rgba(63, 167, 82, 0.5);
+}
+
+
 
 @media (max-width: 768px) {
     header {
@@ -67,7 +109,8 @@ button:hover {
     }
 
     .nav-links {
-        margin-top: 20px; /* Add space between logo and navigation links */
+        margin-top: 0px; /* Add space between logo and navigation links */
+        padding: 1px;
     }
 
     .nav-links li {
@@ -75,15 +118,185 @@ button:hover {
         margin-bottom: 10px; /* Add spacing between navigation links */
     }
 
-    button {
+    .tickets-button {
         margin-top: 20px; /* Add space between navigation links and button */
     }
+
+    .logo {
+        max-width: 80%; /* Adjust the percentage to control logo size, smaller screens */
+    }
 }
+
+
+
+
 
 /*header styles end*/
 
 /* Styles for the hero banner */
-/* Styles for the hero banner */
+
+
+
+
+
+
+#explore-exhibits-button {
+    padding: 18px 50px;
+    background-color: rgba(51, 121, 95, 1);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-decoration: none; /* Remove underline for links */
+    color: white; /* Text color for the button */
+    font-family: 'Roboto Mono', monospace;
+    
+}
+#explore-exhibits-button:hover {
+    background-color:  rgba(63, 167, 82, 0.5); 
+}
+
+
+.hero-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the banner height to full viewport height for centering */
+    background-image: url('assets/banner-main\ v3.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    max-height: 500px;
+
+    }
+
+    
+   
+/* Media query for smaller screens */
+    @media (max-width: 768px) {
+        background-size: auto; /* Scale down the background image */
+        padding: 50px 0; /* Reduce padding for smaller screens */
+    }
+    }
+
+/* Styles for the hero banner end */
+
+/* Styles for news containers */
+
+.news-containers {
+    color: aliceblue;
+}
+
+.news-container {
+    background-color: #f4f4f4; /* Background color for the news section */
+    padding: 20px; /* Padding around the news content */
+    border: 1px solid #ddd; /* Optional: Add a border */
+}
+
+/* Style for the news header */
+.news-header {
+    font-size: 24px; /* Adjust the font size as needed */
+    text-align: start; /* Center the header text */
+    margin-bottom: 10px; /* Add margin at the bottom of the header */
+}
+
+
+
+
+/* Style for the row of cards */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+
+
+/* Style for each column */
+.column {
+    flex: 1;
+    max-width: 30%;
+    margin-bottom: 20px; /* Add spacing between columns */
+}
+
+/* Style for each card */
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Style for the card image */
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for the card header */
+.card h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.card {
+    box-shadow: 5px 5px 10px rgba(34, 33, 33, 0.5);
+}
+
+/* Style for the details section */
+.details {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style for the date */
+.date {
+    color: #888;
+}
+
+/* Style for the "Read More" button */
+.read-more {
+    background-color: #3A6641;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    
+}
+
+/* Style for the icon in the button */
+.read-more i {
+    margin-left: 5px;
+    
+}
+
+@media (max-width: 768px) {
+    .column {
+        max-width: 100%; /* Take up full width on smaller screens */
+        padding: 10px
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+    
+
+
+
 
 
 
