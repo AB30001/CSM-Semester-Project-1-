@@ -384,12 +384,12 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    
     background-color: #504646;
     color: white;
 }
 .sponsors-container div {
     margin: 0 5px;  /* Provides some spacing between the divs */
+    padding: 0 20px;
 }
 .sponsors-container img {
     max-width: 200px; /* Or whatever default size you desire */
@@ -398,9 +398,33 @@ button:hover {
 
 .sponsors-container div p {
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 300;
+    color: #aaa;
 }
+
+@media (max-width: 768px) {
+    .sponsors-container {
+        justify-content: center;
+    }
+    
+    .sponsors-container div {
+        margin: 10px 5px;
+    }
+
+    .sponsors-container img {
+        max-width: 120px;  /* Scale down the images on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .sponsors-container img {
+        max-width: 90px;  /* Scale down further for very small screens */
+        margin-left: 20px;
+    }
+}
+
+
 
 
    
