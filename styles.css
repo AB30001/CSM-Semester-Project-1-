@@ -6,6 +6,9 @@
     margin: 0 auto;
     background-color: transparent;
 }
+html {
+    background-color: #e6dede;
+}
 
 
 i {
@@ -24,11 +27,16 @@ h2 {
 
 
 
+
+
 #latest-news {
     color:  black !important;
     font-family:'Inter', sans-serif;
     margin-left: 40px;
     margin-top: 10px;
+}
+.latest-news-headline {
+    background-color: #fff;
 }
 /*header styles*/
 
@@ -45,8 +53,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 5px 5px 5px; /* top, right, bottom, left */
+    padding: 5px 15px 5px 5px; /* top, right, bottom, left */
     background-color: #333333;
+    font-family: 'Inter', sans-serif;;
 }
 
 .logo {
@@ -55,11 +64,18 @@ header {
     background-color: #333333;
     
 }
+
+
+#logo-div {
+
+    margin: 0px;
+    
+}
 nav ul {
     background-color: #333333;
 }
 .tickets-button {
-    margin: 0px;
+    margin:0px ;
 }
 
 .nav-links {
@@ -80,7 +96,7 @@ nav ul {
     color: #79e08c ;
 }
 
-button {
+/*button {
     padding: 9px 25px;
     background-color: rgba(63, 167, 82, 0.8);
     border:none;
@@ -89,10 +105,10 @@ button {
     transition: all 0.3s ease 0s;
     
 }
-
+**if in the future will be a button, styles are here.
 button:hover {
     background-color: rgba(63, 167, 82, 0.5); 
-}
+}*/ 
 
 .tickets-button {
     padding: 9px 25px;
@@ -155,13 +171,13 @@ button:hover {
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    text-decoration: none; /* Remove underline for links */
+    text-decoration: none; 
     color: white; /* Text color for the button */
     font-family: 'Roboto Mono', monospace;
     
 }
 #explore-exhibits-button:hover {
-    background-color:  rgba(63, 167, 82, 0.5); 
+    background-color:  rgba(12, 66, 22, 0.5); 
 }
 
 
@@ -178,6 +194,7 @@ button:hover {
     max-height: 500px;
 
     }
+
 
     
    
@@ -196,15 +213,9 @@ button:hover {
 /* Styles for news containers */
 
 .news-containers {
+    background-color: transparent; /* Background color for the news section */
     color: rgb(3, 3, 3);
     
-    
-}
-
-.news-container {
-    background-color: #f4f4f4; /* Background color for the news section */
-    padding: 20px; /* Padding around the news content */
-    border: 1px solid #ddd; /* Optional: Add a border */
 }
 
 /* Style for the news header */
@@ -220,11 +231,21 @@ button:hover {
 /* Style for the row of cards */
 .row {
     display: flex;
-    flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
     justify-content: space-between;
-    padding: 20px;
     
+    padding: 20px;
+    background-color: #fff;
+    }
+
+@media (max-width: 768px) {
+
+    .row{
+    display: flex;
+    flex-direction: column;
 }
+}
+
+
 
 
 
@@ -232,8 +253,13 @@ button:hover {
 .column {
     flex: 1;
     max-width: 30%;
-    margin-bottom: 20px; /* Add spacing between columns */
+    margin-bottom: 20px;} /* Add spacing between columns 
 }
+    
+}
+
+
+
 
 /* Style for each card */
 .card {
@@ -284,7 +310,7 @@ button:hover {
     
 }
 
-/* Style for the icon in the button */
+/* Style for the icon in the button read more */
 .read-more i {
     margin-left: 5px;
     
@@ -314,8 +340,9 @@ button:hover {
 
 .footer-column {
     flex: 1;
-    padding: 0 20px;
+    padding: 0px;
     max-width: 25%;
+    margin: 10px;
 }
 
 .footer-column-name {
@@ -329,9 +356,12 @@ button:hover {
 .footer p {
     color: #aaa; 
     margin-bottom: 10px;
+    
     font-family: 'Inter', sans-serif;
     font-size: 14px;
 }
+
+
 
 
 
@@ -358,8 +388,16 @@ button:hover {
 
 @media (max-width: 768px) {
     .footer {
+        display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .footer div h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
     }
 
     .footer-column {
@@ -377,7 +415,7 @@ button:hover {
     .fa-x-twitter, 
     .fa-linkedin-in {
         margin: 0 5px;
-    }
+    }*/
 }
 
 .sponsors-container {
@@ -403,7 +441,6 @@ button:hover {
     color: #aaa;
 }
 
-@media (max-width: 768px) {
     .sponsors-container {
         justify-content: center;
     }
@@ -413,16 +450,112 @@ button:hover {
     }
 
     .sponsors-container img {
-        max-width: 120px;  /* Scale down the images on smaller screens */
+        max-width: 100px;  /* Scale down the images on smaller screens */
     }
+
+
+
+/*footer styles END*/
+
+
+/*about us page styles*/
+
+
+#about-us-page-ul li {
+    color: #333;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-@media (max-width: 480px) {
-    .sponsors-container img {
-        max-width: 90px;  /* Scale down further for very small screens */
-        margin-left: 20px;
-    }
+#about-us-page-ul {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
+
+
+.about-us-page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+
+
+.about-us-page p, h3 {
+    display: block;
+    text-align: left;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+
+
+
+.image-container-about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.image-container-about-us img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}
+
+/*exhibits page styles*/
+
+.hero-banner-exhibits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the banner height to full viewport height for centering */
+    background-image: url('assets/hero\ banner\ exhibits.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    max-height: 500px; 
+
+}
+
+.hero-banner-exhibits {
+    display: flex;
+    flex-direction: column;
+    
+}
+.hero-banner-exhibits h2 {
+    text-align: center;
+}
+.exhibits-text-top {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    
+}
+.exhibits-text-top p {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
 
 
 
