@@ -268,6 +268,10 @@ button:hover {
     margin-bottom: 20px;
     border: 1px solid #ddd;
     text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.05); /* This enlarges the card by 5% when hovered */
 }
 
 /* Style for the card image */
@@ -292,7 +296,6 @@ button:hover {
     flex-wrap: wrap;
 }
 
-/* Style for the date */
 .date {
     color: #888;
 }
@@ -549,14 +552,121 @@ button:hover {
 }
 
 
+/* Style for the Contact Us Section */
+.contact-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 5%;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+/* Style for the Contact Us Section */
+.contact-us {
+    flex: 1;
+    margin-right: 5%;
+    box-sizing: border-box;
+}
+
+.contact-us h2,
+.contact-us h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-us p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.contact-us a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-us a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px; /* Space between icons */
+}
+.social-icons i {
+    margin: 5px;
+}
+
+.social-icons i {
+    font-size: 24px; /* Adjust as needed */
+    cursor: pointer;
+}
+
+/* Style for the Contact Form */
+#contact-form {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2f3133;
+    outline: none;
+}
+
+.form-group button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #3FA752;
+}
 
 
 
 
+@media (max-width: 768px) {
+    .contact-page {
+        flex-direction: column;
+    }
 
+    
+    .contact-us {
+        margin-bottom: 30px;
+    }
 
-
-
+    
+}
 
 
 
