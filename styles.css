@@ -2,17 +2,16 @@
 
 
 * {
-    max-width: 1440px;
+    max-width: 1400px;
     margin: 0 auto;
     background-color: transparent;
 }
 html {
     background-color: #e6dede;
+    scroll-behavior: smooth;
 }
 
 
-i {
-    background-color: transparent;
 }
 h2 {
     text-align: left;
@@ -33,7 +32,9 @@ h2 {
     color:  black !important;
     font-family:'Inter', sans-serif;
     margin-left: 40px;
-    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
 }
 .latest-news-headline {
     background-color: #fff;
@@ -41,8 +42,7 @@ h2 {
 /*header styles*/
 
 li, a, button {
-    font-family:'Inter', sans-serif;
-    font-weight: 
+    font-family:'Inter', sans-serif; 
     font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
@@ -96,7 +96,7 @@ nav ul {
     color: #79e08c ;
 }
 
-/*button {
+button {
     padding: 9px 25px;
     background-color: rgba(63, 167, 82, 0.8);
     border:none;
@@ -105,10 +105,10 @@ nav ul {
     transition: all 0.3s ease 0s;
     
 }
-**if in the future will be a button, styles are here.
+
 button:hover {
     background-color: rgba(63, 167, 82, 0.5); 
-}*/ 
+} 
 
 .tickets-button {
     padding: 9px 25px;
@@ -227,12 +227,11 @@ button:hover {
 
 
 
-
+/*STYLES FOR LATEST NEWS CONTAINERS!!! START HERE*/
 /* Style for the row of cards */
 .row {
     display: flex;
     justify-content: space-between;
-    
     padding: 20px;
     background-color: #fff;
     }
@@ -256,8 +255,6 @@ button:hover {
     margin-bottom: 20px;} /* Add spacing between columns 
 }
     
-}
-
 
 
 
@@ -267,6 +264,7 @@ button:hover {
     padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
+    border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
 }
@@ -281,9 +279,11 @@ button:hover {
 }
 
 /* Style for the card header */
-.card h3 {
+.card h2 {
     font-size: 18px;
     margin-top: 10px;
+    text-align: left;
+    font-family: 'Inter', sans-serif;;
 }
 .card {
     box-shadow: 5px 5px 10px rgba(34, 33, 33, 0.5);
@@ -291,10 +291,13 @@ button:hover {
 
 /* Style for the details section */
 .details {
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
+
+
 
 .date {
     color: #888;
@@ -467,13 +470,15 @@ button:hover {
 #about-us-page-ul li {
     color: #333;
     text-align: left;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 20px 20px 20px 20px; /* top, right, bottom, left */
+    
 }
+
 
 #about-us-page-ul {
     padding-top: 50px;
     padding-bottom: 50px;
+    max-width: 1000px;
 }
 
 
@@ -483,6 +488,7 @@ button:hover {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
+    background-color: white;
     
 }
 
@@ -494,6 +500,7 @@ button:hover {
     padding: 10px;
     padding-top: 30px;
     padding-bottom: 30px;
+    max-width: 600px;
     
 }
 
@@ -504,9 +511,9 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
     padding: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    background-color:
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 
 }
@@ -523,7 +530,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Set the banner height to full viewport height for centering */
+    height: 100vh; 
     background-image: url('assets/hero\ banner\ exhibits.jpg');
     background-size: cover;
     background-position: center;
@@ -533,24 +540,33 @@ button:hover {
 
 }
 
+
 .hero-banner-exhibits {
     display: flex;
     flex-direction: column;
     
 }
+
+
 .hero-banner-exhibits h2 {
     text-align: center;
 }
 .exhibits-text-top {
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    padding: 30px;
+    background-color: white;
     
 }
 .exhibits-text-top p {
-    text-align: center;
+    text-align: start;
 }
 
+.details p {
+    text-align: start;
+}
+
+/*exhibits page styles END!!!*/
 
 /* Style for the Contact Us Section */
 .contact-page {
@@ -558,8 +574,7 @@ button:hover {
     justify-content: space-between;
     align-items: flex-start;
     padding: 50px 5%;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
@@ -578,7 +593,7 @@ button:hover {
 
 .contact-us p {
     margin-bottom: 20px;
-    color: #666;
+    color: #1b0303;
 }
 
 .contact-us a {
@@ -601,7 +616,7 @@ button:hover {
 }
 
 .social-icons i {
-    font-size: 24px; /* Adjust as needed */
+    font-size: 24px; 
     cursor: pointer;
 }
 
@@ -651,6 +666,9 @@ button:hover {
 .form-group button:hover {
     background-color: #3FA752;
 }
+.contact-page {
+    background-color: white;
+}
 
 
 
@@ -667,6 +685,127 @@ button:hover {
 
     
 }
+/*styles page buttom back to top*/
+
+#back-to-top-div {
+    display: flex;
+    justify-content: center; 
+    position: relative;
+    width: 100%;
+    background-color: #504646;
+}
+
+.back-to-top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #504646;
+    border: 2px solid whitesmoke;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: medium;
+    text-decoration: none;
+    cursor: pointer; 
+}
+
+/*read more page*/
+
+.read-more-page {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: normal;
+    padding: 20px 20px 20px 20px; /* top, right, bottom, left */
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    border-radius: 10px;
+}
+.read-more-text {
+    max-width: 700px;
+    color: black;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.read-more-text h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+    
+}
+.read-more-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+    .read-more-page {
+        flex-direction: column;
+    }
+   
+}
+
+
+.read-more-page{
+    margin: 20px 0px 20px 0px;
+}
+
+/*styles tickets page*/
+
+#tickets-page {
+    background-color: rgb(255, 255, 255)
+}
+
+td, th {
+    padding: 20px 20px 20px 20px;
+}
+
+
+.choose-your-tickets {
+    display: flex;
+    align-items: center;
+    height: auto; 
+    color: black;
+    font-size: 12px;
+    background-color: white;
+    padding: 20px 0px 20px 0px; /* top, right, bottom, left */
+    
+}
+#tickets-info {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 0px 20px 0px; /* top, right, bottom, left */
+    
+
+}
+#tickets-info p {
+    margin: 0px 5px 0px 5px; /* top, right, bottom, left */
+    padding-bottom: 50px;
+    max-width: 400px;
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
