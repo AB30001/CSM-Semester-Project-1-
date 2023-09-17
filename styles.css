@@ -127,27 +127,27 @@ button:hover {
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Stack items vertically for smaller screens */
+        flex-direction: column; 
         text-align: center;
         padding: 20px 5%;
     }
 
     .nav-links {
-        margin-top: 0px; /* Add space between logo and navigation links */
+        margin-top: 0px; 
         padding: 1px;
     }
 
     .nav-links li {
-        display: block; /* Display navigation links as block elements */
-        margin-bottom: 10px; /* Add spacing between navigation links */
+        display: block; 
+        margin-bottom: 10px; 
     }
 
     .tickets-button {
-        margin-top: 20px; /* Add space between navigation links and button */
+        margin-top: 20px; 
     }
 
     .logo {
-        max-width: 80%; /* Adjust the percentage to control logo size, smaller screens */
+        max-width: 80%; 
     }
 }
 
@@ -172,7 +172,7 @@ button:hover {
     cursor: pointer;
     transition: all 0.3s ease 0s;
     text-decoration: none; 
-    color: white; /* Text color for the button */
+    color: white; 
     font-family: 'Roboto Mono', monospace;
     
 }
@@ -185,7 +185,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Set the banner height to full viewport height for centering */
+    height: 100vh; 
     background-image: url('assets/banner-main\ v3.png');
     background-size: cover;
     background-position: center;
@@ -244,15 +244,11 @@ button:hover {
 }
 }
 
-
-
-
-
 /* Style for each column */
 .column {
     flex: 1;
     max-width: 30%;
-    margin-bottom: 20px;} /* Add spacing between columns 
+    margin-bottom: 20px;} /* spacing between columns 
 }
     
 
@@ -269,7 +265,7 @@ button:hover {
     transition: transform 0.3s ease-in-out;
 }
 .card:hover {
-    transform: scale(1.05); /* This enlarges the card by 5% when hovered */
+    transform: scale(1.05); /* 5% when hovered */
 }
 
 /* Style for the card image */
@@ -289,7 +285,7 @@ button:hover {
     box-shadow: 5px 5px 10px rgba(34, 33, 33, 0.5);
 }
 
-/* Style for the details section */
+/* Style for the date, date text, button read more */
 .details {
     margin-top: 20px;
     display: flex;
@@ -421,7 +417,7 @@ button:hover {
     .fa-x-twitter, 
     .fa-linkedin-in {
         margin: 0 5px;
-    }*/
+    }
 }
 
 .sponsors-container {
@@ -431,14 +427,10 @@ button:hover {
     background-color: #504646;
     color: white;
 }
-.sponsors-container div {
-    margin: 0 5px;  /* Provides some spacing between the divs */
-    padding: 0 20px;
-}
 .sponsors-container img {
-    max-width: 200px; /* Or whatever default size you desire */
-    height: auto;
-    margin: px; /* Spacing between images */}
+    max-width: 200px; 
+
+}
 
 .sponsors-container div p {
     font-family: 'Roboto', sans-serif;
@@ -456,7 +448,7 @@ button:hover {
     }
 
     .sponsors-container img {
-        max-width: 100px;  /* Scale down the images on smaller screens */
+        max-width: 100px;  /* Scale down images on smaller screens */
     }
 
 
