@@ -489,6 +489,7 @@ button:hover {
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: white;
+    font-family: 'Inter', sans-serif;
     
 }
 
@@ -548,8 +549,9 @@ button:hover {
 }
 
 
-.hero-banner-exhibits h2 {
+.hero-banner-exhibits {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 .exhibits-text-top {
     display: flex;
@@ -558,8 +560,9 @@ button:hover {
     background-color: white;
     
 }
-.exhibits-text-top p {
+.exhibits-text-top  {
     text-align: start;
+    font-family: 'Inter', sans-serif;
 }
 
 .details p {
@@ -576,6 +579,7 @@ button:hover {
     padding: 50px 5%;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;;
 }
 
 /* Style for the Contact Us Section */
@@ -757,10 +761,12 @@ button:hover {
 
 #tickets-page {
     background-color: rgb(255, 255, 255)
+
 }
 
 td, th {
     padding: 20px 20px 20px 20px;
+    font-family: 'Inter', sans-serif;;
 }
 
 
@@ -781,6 +787,7 @@ td, th {
     flex-direction: column;
     background-color: white;
     padding: 20px 0px 20px 0px; /* top, right, bottom, left */
+    font-family: 'Inter', sans-serif;
     
 
 }
@@ -788,6 +795,7 @@ td, th {
     margin: 0px 5px 0px 5px; /* top, right, bottom, left */
     padding-bottom: 50px;
     max-width: 400px;
+    
    
     
 
